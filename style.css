@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    /* position:fixed; */
+}
+.head{
+
+    background-color: #e8e5e480;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(232, 229, 228, 0.5);
+    backdrop-filter: blur(16px);
+    opacity: 1;
+    width: 300px;
+    justify-content: space-between;
+    /* background: transparent; */
+    position: fixed;
+    z-index: 1;
+}
+.head>p{
+    margin: 10px;
+    font-size: larger;
+    padding: 10px;
+    /* background-color: aquamarine; */
+}
+
+.main-content{
+    width: 100%;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5fr 1fr;
+    height: 70vh;
+    place-items: center;
+}
+.headind{
+    text-align: center;
+    font-size: 2.4rem;
+    width: 50%;
+    word-spacing: 5px;
+    line-height: 110px;
+}
+.conatiner-head{
+    display: flex;
+    flex-direction:row;
+    position: relative;
+    bottom: 5rem;
+}
+.conatiner-head>p{
+    padding: 10px;
+    font-size: 20px;
+}
+.ani{
+    padding: 15px;
+    width: fit-content;
+    text-align: center;
+    background: white;
+    border-radius: 100px;
+    width: 80px;
+}
+@media(max-width:750px){
+    h1{
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 50px;
+    }
+}
+
+.main-display{
+    margin: 0 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 50px;
+}
+img{
+    border-radius: 20px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+
+}
+
+.main-display>div{
+    position: relative;
+}
+.main-display>div>p{
+    position: absolute;
+    top: 0;
+    margin: 2rem;
+     color: white;
+     font-size: 20px;
+     font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+img:hover{
+    opacity: .8;
+}
+footer{
+    display: grid;
+    width: 100%;
+    /* grid-template-columns: 100vh; */
+    grid-template-rows: 50vh 3fr;
+    align-items: center;
+    justify-content: center;
+
+}
+.footer{
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+}
+.footer>h2{
+    opacity: 1;
+    padding: 20px;
+    color: gray;
+}
+.link{
+    display: flex;
+    width: 80vi;
+    justify-content: space-between;
+}
+.link-2{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 3rem;
+}
+a, .link>.copyright>p{
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+    font-size: 19px;
+}
