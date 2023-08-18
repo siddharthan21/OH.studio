@@ -33,7 +33,7 @@ header{
 .main-content{
     width: 100%;
     display:grid;
-    grid-template-columns: 1fr;
+    /* grid-template-columns: 1fr; */
     grid-template-rows: 5fr 1fr;
     height: 70vh;
     place-items: center;
@@ -63,13 +63,7 @@ header{
     border-radius: 100px;
     width: 80px;
 }
-@media(max-width:750px){
-    h1{
-        font-size: 36px;
-        font-weight: 400;
-        line-height: 50px;
-    }
-}
+
 
 .main-display{
     margin: 0 10rem;
@@ -136,4 +130,69 @@ a, .link>.copyright>p{
     color: black;
     text-transform: capitalize;
     font-size: 19px;
+}
+@media only screen and (min-width:280px) and (max-width:800px){
+    .main-content{
+        display: flex;
+        margin-bottom: -5rem;
+    }
+    .conatiner-head{
+        display: none;
+    }
+    .headind{
+        width: 100%;
+    }
+    h1{
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 50px;
+    }
+    .main-display{
+        display: flex;
+        flex-direction: column;
+        margin: 0 2rem;
+    }
+    a, .link>.copyright>p{
+        text-decoration: none;
+        color: black;
+        text-transform: capitalize;
+        font-size: 11px;
+    }
+}
+
+@media only screen and (min-width:800px) and (max-width:1450px){
+    .headind{
+        margin: 0 10rem;
+        width: 100%;
+        font-size: 2rem;
+        line-height: 65px;
+    }
+    .main-display{
+        margin: 0 5rem;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media(max-width:280px){
+    .headind{
+        width: 100%;
+        font-size: .8rem;
+        line-height: 65px;
+    }
+    .main-display{
+        margin: 0 .5rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .head{
+        width: 200px;
+        font-size: 10px;
+    }
+    .link,.link-2{
+        font-size: .7rem;
+        text-align: center;
+        flex-direction: column;
+        padding: 10px;
+    }
 }
